@@ -13,10 +13,10 @@ export const GET = async (req: NextRequest) => {
 
   try {
     await sql`UPDATE users SET upload_count = 0`;
-    console.log("Campo upload_count zerado com sucesso!");
+    console.log("upload_count field reset successfully!");
     return new NextResponse("Success", { status: 200 });
   } catch (error) {
-    console.error("Erro ao zerar upload_count:", error);
+    console.error("Error while resetting upload_count:", error);
     return new NextResponse("Internal Server Error", { status: 500 });
   }
 };

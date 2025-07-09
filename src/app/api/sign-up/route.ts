@@ -20,16 +20,16 @@ export const POST = async (req: Request) => {
   const wh = new Webhook(WEBHOOK_SECRET);
 
   let evt: any;
-try {
-  evt = wh.verify(payload, {
-    "svix-id": svix_id,
-    "svix-timestamp": svix_timestamp,
-    "svix-signature": svix_signature,
-  }) as WebhookEvent;
-} catch (err) {
-  console.error("Erro ao verificar webhook:", err);
-  return NextResponse.json({ error: "Invalid webhook" }, { status: 400 });
-}
+  try {
+    evt = wh.verify(payload, {
+      "svix-id": svix_id,
+      "svix-timestamp": svix_timestamp,
+      "svix-signature": svix_signature,
+    }) as WebhookEvent;
+  } catch (err) {
+    console.error("Error verifying webhook:", err);
+    return NextResponse.json({ error: "Invalid webhook" }, { status: 400 });
+  }
 
   const eventType = evt.type;
   const data = evt.data;
@@ -39,7 +39,7 @@ try {
 
     if (!email_addresses || email_addresses.length === 0) {
       return NextResponse.json(
-        { error: "Email não encontrado" },
+        { error: "Email not found" },
         { status: 400 },
       );
     }
@@ -51,21 +51,21 @@ try {
         email_addresses[0].email_address,
         `${first_name ?? ""} ${last_name ?? ""}`.trim(),
       ]);
-      console.log("Usuário salvo com sucesso:", {
+      console.log("User saved successfully:", {
         email: email_addresses[0].email_address,
         full_name: `${first_name ?? ""} ${last_name ?? ""}`.trim(),
       });
     } catch (error) {
-      console.error("Erro ao salvar usuário:", error);
+      console.error("Error saving user:", error);
       return NextResponse.json(
-        { error: "Erro ao salvar usuário" },
+        { error: "Error saving user" },
         { status: 500 },
       );
     }
   }
 
   return NextResponse.json(
-    { message: "Webhook processado com sucesso" },
+    { message: "Webhook processed successfully" },
     { status: 200 },
   );
 };

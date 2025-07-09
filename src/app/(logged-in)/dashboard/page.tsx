@@ -18,8 +18,8 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
-    title: "Seus Sumários | SumaristaAI",
-    description: "Transforme seus PDFs em insights concisos",
+    title: "Your Summaries | SumaristaAI",
+    description: "Transform your PDFs into concise insights",
     openGraph: {
         images: [{ url: "/opengraph-image.png" }],
     },
@@ -39,7 +39,7 @@ export default async function DashboardPage() {
     const { hasReachedLimit, uploadLimit } = await hasReachedUploadLimit(userId);
     const summaries = await getSummaries(userId);
 
-    // forçando as variáveis a serem booleanas	
+    // forcing variables to be boolean
     const isDisabled = !!hasReachedLimit || !!reachedUploadLimit;
 
     return (
@@ -60,7 +60,7 @@ export default async function DashboardPage() {
                                 whileInView="visible"
                                 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-gray-600 to-gray-900 text-transparent bg-clip-text mb-6"
                             >
-                                Seus Sumários
+                                Your Summaries
                             </MotionH1>
                             <MotionP
                                 variants={itemVariants}
@@ -68,7 +68,7 @@ export default async function DashboardPage() {
                                 animate="visible"
                                 className="text-gray-600"
                             >
-                                Transforme seus PDFs em insights concisos
+                                Transform your PDFs into concise insights
                             </MotionP>
                         </div>
                         <MotionDiv
@@ -85,7 +85,7 @@ export default async function DashboardPage() {
                             >
                                 <Link href="/upload" className="flex items-center text-white">
                                     <Plus className="w-5 h-5 mr-2" />
-                                    Novo Sumário
+                                    New Summary
                                 </Link>
                             </Button>
                         </MotionDiv>
@@ -100,16 +100,16 @@ export default async function DashboardPage() {
                         >
                             <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-blue-800">
                                 <p>
-                                    Você atingiu o limite de {uploadLimit} sumários no plano
-                                    Básico.{" "}
+                                    You have reached the limit of {uploadLimit} summaries on the
+                                    Basic plan.{" "}
                                     <Link
                                         href="/#pricing"
                                         className="text-blue-900 hover:text-blue-800 underline font-medium underline-offset-4 inline-flex items-center gap-1"
                                     >
-                                        Clique aqui para fazer o upgrade para o plano PRO{" "}
+                                        Click here to upgrade to the PRO plan{" "}
                                         <ArrowRight className="w-4 h-4 inline-block" />
                                     </Link>
-                                    para criar sumários ilimitados.
+                                    to create unlimited summaries.
                                 </p>
                             </div>
                         </MotionDiv>
@@ -124,15 +124,15 @@ export default async function DashboardPage() {
                         >
                             <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-blue-800">
                                 <p>
-                                    Você atingiu o limite de 3 sumários por dia.{" "}
+                                    You have reached the limit of 3 summaries per day.{" "}
                                     <Link
                                         href="/#pricing"
                                         className="text-blue-900 hover:text-blue-800 underline font-medium underline-offset-4 inline-flex items-center gap-1"
                                     >
-                                        Clique aqui para comprar um plano{" "}
+                                        Click here to purchase a plan{" "}
                                         <ArrowRight className="w-4 h-4 inline-block" />
                                     </Link>
-                                    para criar sumários ilimitados.
+                                    to create unlimited summaries.
                                 </p>
                             </div>
                         </MotionDiv>

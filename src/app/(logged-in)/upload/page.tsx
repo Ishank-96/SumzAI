@@ -18,7 +18,7 @@ export default async function UploadPage() {
     const userId = user.id;
     const userEmail = user.emailAddresses?.[0]?.emailAddress;
 
-    // Verifica os limites de upload pelo ID e e-mail do usuário
+    // Check upload limits by user ID and email
     const [{ hasReachedLimit }, reachedUploadLimit] = await Promise.all([
         hasReachedUploadLimit(userId),
         verifyReachedUploadLimit(userEmail),

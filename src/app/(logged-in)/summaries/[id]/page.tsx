@@ -9,8 +9,8 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
-    title: "Sumário | SumaristaAI",
-    description: "Transforme seus PDFs em insights concisos",
+    title: "Summary | SumaristaAI",
+    description: "Transform your PDFs into concise insights",
     openGraph: {
         images: [{ url: "/opengraph-image.png" }],
     },
@@ -75,7 +75,7 @@ export default async function SummaryPage(props: {
 
                                 <div className="absolute top-2 sm:top-4 right-2 sm:right-4 flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm text-muted-foreground bg-white/90 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full shadow-xs">
                                     <FileText className="h-3 w-3 sm:h-4 sm:w-4 text-blue-400" />
-                                    {summary.word_count?.toLocaleString()} palavras
+                                    {summary.word_count?.toLocaleString()} words
                                 </div>
 
                                 <div className="relative mt-8 sm:mt-6 flex justify-center">

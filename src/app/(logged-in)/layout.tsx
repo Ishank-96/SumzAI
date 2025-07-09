@@ -5,8 +5,8 @@ import { Metadata } from "next";
 import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
-  title: "Enviar PDF 📄 | SumaristaAI",
-  description: "Envie seu PDF e gere um sumário com IA",
+  title: "Upload PDF 📄 | SumaristaAI",
+  description: "Upload your PDF and generate a summary with AI",
   openGraph: {
     images: [{ url: "/opengraph-image.png" }],
   },
@@ -22,7 +22,7 @@ export default async function UploadLayout({
     redirect("/sign-in");
   }
 
-  // A verificação parece inútil, já que o usuário já foi verificado acima. Porém é um double check
+  // The check seems redundant since the user is already verified above. But it's a double check.
   const userExistsInDatabase = await getUserFromDb(user.emailAddresses[0].emailAddress);
   if (!userExistsInDatabase) {
     redirect("/sign-in");

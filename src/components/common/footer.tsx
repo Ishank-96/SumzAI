@@ -9,7 +9,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="flex justify-center items-center gap-2 flex-col text-gray-400 mt-2">
-                <a href="mailto:sumaristaai@gmail.com">test@gmail.com</a>
+                <a href="mailto:sumaristaai@gmail.com">test@example.com</a>
             </div>
             <div className="flex justify-center items-center mt-4 space-x-4 p-4">
                 <a
@@ -17,7 +17,11 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    
+                    <img
+                        src="https://img.shields.io/github/stars/matheusmartinsviana/sumaristaai"
+                        alt="GitHub Repo Stars"
+                        className="h-6"
+                    />
                 </a>
             </div>
         </footer>

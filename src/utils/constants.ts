@@ -8,7 +8,7 @@ export const pricingPlans = [
     items: ["Storage for 5 summaries", "Standard processing", "Email support"],
     id: "basic",
     paymentLink: "https://buy.stripe.com/test_4gM5kCeQk2kbbWwbuNgnK01",
-    priceId:  "price_1RifIaCLB6Cc89Bs8BDkuTPa",
+    priceId:  "price_1RifIaCLB6Cc89BsPP3IiqHV",
   },
   {
     name: "Pro",
@@ -22,7 +22,7 @@ export const pricingPlans = [
     ],
     id: "pro",
     paymentLink: "https://buy.stripe.com/test_cNicN48rW0c35y8dCVgnK00",
-    priceId: "price_1RifIaCLB6Cc89BsPP3IiqHV",
+    priceId: "price_1RifIaCLB6Cc89Bs8BDkuTPa",
   },
 ];
 

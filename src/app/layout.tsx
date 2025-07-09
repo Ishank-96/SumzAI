@@ -1,4 +1,4 @@
-//root file
+// root file
 import Footer from "@/components/common/footer";
 import Header from "@/components/common/header";
 import { Toaster } from "@/components/ui/sonner";
@@ -15,22 +15,22 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "SumaristaAI | ⚡ Gere sumários com IA",
+  title: "SumaristaAI | ⚡ Generate summaries with AI",
   description:
-    "Sua IA especialista em sumários. Extraia insights de PDFs, sumários e documentos com precisão e rapidez com o SumaristaAI.",
+    "Your AI summary expert. Extract insights from PDFs, summaries, and documents with precision and speed using SumaristaAI.",
   openGraph: {
-    title: "SumaristaAI | ⚡ Gere sumários com IA",
+    title: "SumaristaAI | ⚡ Generate summaries with AI",
     description:
-      "Sua IA especialista em sumários. Extraia insights de PDFs, sumários e documentos com precisão e rapidez com o SumaristaAI.",
+      "Your AI summary expert. Extract insights from PDFs, summaries, and documents with precision and speed using SumaristaAI.",
     url: ORIGIN_URL,
     images: [{ url: "/opengraph-image.png" }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SumaristaAI | ⚡ Gere sumários com IA",
+    title: "SumaristaAI | ⚡ Generate summaries with AI",
     description:
-      "Sua IA especialista em sumários. Extraia insights de PDFs, sumários e documentos com precisão e rapidez com o SumaristaAI.",
+      "Your AI summary expert. Extract insights from PDFs, summaries, and documents with precision and speed using SumaristaAI.",
     images: [{ url: "/opengraph-image.png" }],
   },
   icons: {
@@ -48,19 +48,19 @@ export const metadata: Metadata = {
   applicationName: "SumaristaAI",
   creator: "https://github.com/matheusmartinsviana",
   keywords: [
-    "inteligência artificial",
-    "resumo",
-    "documento",
-    "arquivo",
-    "texto",
-    "análise de texto",
-    "extração de informações",
-    "pdf para sumário",
+    "artificial intelligence",
+    "summary",
+    "document",
+    "file",
+    "text",
+    "text analysis",
+    "information extraction",
+    "pdf to summary",
     "pdf",
-    "pdf para texto",
-    "pdf para resumo",
-    "sumarização",
-    "conteúdo",
+    "pdf to text",
+    "pdf to summary",
+    "summarization",
+    "content",
   ],
   robots: {
     index: true,

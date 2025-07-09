@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { getUserPlan } from "@/lib/user";
 import { cn } from "@/lib/utils";
 import { Crown } from "lucide-react";
+
 export default async function PlanBadge() {
   const userPlan = await getUserPlan();
   console.log("userPlan", userPlan);
@@ -22,8 +23,8 @@ export default async function PlanBadge() {
       {userPlan === "pro"
         ? "Pro"
         : userPlan === "basic"
-          ? "Básico"
-          : "Compre um plano"}
+          ? "Basic"
+          : "Purchase a plan"}
     </Badge>
   );
 }

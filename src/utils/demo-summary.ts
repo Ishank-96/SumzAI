@@ -1,25 +1,25 @@
 export const DEMO_SUMMARY = `
-## 🚀 **SumaristaAI**  
+## 🚀 **SummaristAI**
 
-- 🔴 **Transforme textos complexos em resumos envolventes e fáceis de entender!**  
-- 📌 O SumaristaAI usa inteligência artificial para criar resumos precisos, dinâmicos e personalizados em segundos.  
+- 🔴 **Turn complex texts into engaging, easy-to-understand summaries!**  
+- 📌 SummaristAI uses artificial intelligence to create accurate, dynamic, and personalized summaries in seconds.
 
-## 📄 **O que é o SumaristaAI?**  
-- 🤖 Plataforma de IA para gerar resumos automaticamente.  
-- ⚡ Simplifique relatórios, artigos, notícias e muito mais.  
-- 🎯 Economia de tempo e mais produtividade na leitura.  
+## 📄 **What is SummaristAI?**  
+- 🤖 An AI-powered platform for automatically generating summaries.  
+- ⚡ Simplify reports, articles, news, and much more.  
+- 🎯 Save time and boost productivity while reading.
 
-## 🔥 **Principais Recursos**  
-- 📝 **Resumos Inteligentes** – Converta textos longos em insights curtos e diretos.  
+## 🔥 **Key Features**  
+- 📝 **Smart Summaries** – Convert long texts into short, direct insights.
 
-## 💡 **Por que Usar o SumaristaAI?**  
-- ⏳ **Ganhe Tempo** – Leia menos, entenda mais.  
-- 📚 **Aprimore seus Estudos** – Ideal para alunos e pesquisadores.  
-- 🏢 **Aumente a Eficiência** – Resumos otimizados para profissionais e empresas.  
-- 🚀 **Tecnologia de Ponta** – IA avançada para extração de informações essenciais.  
+## 💡 **Why Use SummaristAI?**  
+- ⏳ **Save Time** – Read less, understand more.  
+- 📚 **Enhance Your Learning** – Perfect for students and researchers.  
+- 🏢 **Boost Efficiency** – Optimized summaries for professionals and businesses.  
+- 🚀 **Cutting-Edge Technology** – Advanced AI to extract essential information.
 
-## 🛠️ **Como Funciona?**  
-- 📂 **Envie seu texto ou documento.**  
-- ⚡ **Deixe a IA processar os principais pontos.**  
-- 📄 **Receba um resumo estruturado e pronto para uso.**  
+## 🛠️ **How It Works**  
+- 📂 **Upload your text or document.**  
+- ⚡ **Let the AI process the key points.**  
+- 📄 **Receive a structured, ready-to-use summary.**  
 `;

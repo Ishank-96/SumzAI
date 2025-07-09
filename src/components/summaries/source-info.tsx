@@ -22,7 +22,7 @@ export default async function SourceInfo({
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
             <div className="flex items-center justify-center gap-2">
                 <FileText className="h-4 w-4 text-blue-400" />
-                <span>Fonte: {fileName}</span>
+                <span>Source: {fileName}</span>
             </div>
             <div className="flex gap-2">
                 <Button
@@ -33,7 +33,7 @@ export default async function SourceInfo({
                 >
                     <a href={originalFileUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="h-4 w-4 mr-1" />
-                        Ver o original
+                        View original
                     </a>
                 </Button>
                 {isPro && (

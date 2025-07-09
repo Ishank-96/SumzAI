@@ -7,8 +7,8 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Página não encontrada | SumaristaAI",
-  description: "A página que você está procurando não existe ou foi removida.",
+  title: "Page not found | SumaristaAI",
+  description: "The page you are looking for does not exist or has been removed.",
   openGraph: {
     images: [{ url: "/opengraph-image.png" }],
   },
@@ -27,19 +27,19 @@ const Custom404: React.FC = () => {
             variant={"secondary"}
             className="relative px-6 py-2 text-base font-medium bg-white rounded-full group-hover:bg-gray-50 transition-colors duration-200"
           >
-            <p className="text-blue-600">Erro 404</p>
+            <p className="text-blue-600">Error 404</p>
           </Badge>
         </MotionDiv>
         <p className="font-bold py-6 text-center text-4xl sm:text-5xl lg:text-6xl flex flex-wrap justify-center gap-x-2 gap-y-3">
-          Oops! Página não encontrada.
+          Oops! Page not found.
         </p>
         <p>
           <Link
             href="/"
             className="text-blue-500 text-lg font-medium underline mt-8"
-            aria-label="Voltar para a página inicial"
+            aria-label="Back to homepage"
           >
-            Voltar para a página inicial
+            Back to homepage
           </Link>
         </p>
       </div>

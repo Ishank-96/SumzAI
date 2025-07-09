@@ -33,7 +33,7 @@ export const generateSummaryFromGemini = async (pdfText: string) => {
 
     const output = response.text();
     if (!output) {
-      throw new Error("Gemini API: Gemini retornou um texto vazio");
+      throw new Error("Gemini API: Gemini returned an empty text");
     }
 
     return output;
@@ -48,12 +48,12 @@ export const generateSummaryFromGemini = async (pdfText: string) => {
       errorMessage.includes("exceeded")
     ) {
       throw new Error(
-        "Servidor está sobrecarregado. Aguarde um minuto e tente novamente.",
+        "The server is overloaded. Please wait a moment and try again.",
       );
     }
 
     throw new Error(
-      "Ocorreu um erro ao gerar o resumo. Tente novamente mais tarde.",
+      "An error occurred while generating the summary. Please try again later.",
     );
   }
 };

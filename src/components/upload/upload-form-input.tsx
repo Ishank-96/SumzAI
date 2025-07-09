@@ -34,14 +34,15 @@ export const UploadFormInput = forwardRef<HTMLFormElement, UploadFormInputProps>
                         isLoading && "cursor-not-allowed opacity-50"
                     )} />
                 <Button 
-                cy-data="upload-submit"
-                disabled={isLoading || disabled}>
+                    cy-data="upload-submit"
+                    disabled={isLoading || disabled}
+                >
                     {isLoading ?
                         <>
                             <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                            Carregando...
+                            Loading...
                         </>
-                        : "Envie seu PDF"}
+                        : "Upload your PDF"}
                 </Button>
             </MotionDiv>
         </form>

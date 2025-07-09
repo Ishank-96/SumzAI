@@ -29,9 +29,9 @@ export default function DeleteButton({ summaryId }: DeleteButtonProps) {
             const result = await deleteSummaryAction({ summaryId });
             if (result.success) {
                 setOpen(false);
-                toast.success("Sumário deletado com sucesso");
+                toast.success("Summary deleted successfully");
             } else {
-                toast.error("Erro ao deletar sumário");
+                toast.error("Error deleting summary");
             }
         });
     }
@@ -50,14 +50,14 @@ export default function DeleteButton({ summaryId }: DeleteButtonProps) {
             </DialogTrigger>
             <DialogContent>
                 <DialogHeader>
-                    <DialogTitle>Deletar Sumário</DialogTitle>
+                    <DialogTitle>Delete Summary</DialogTitle>
                     <DialogDescription>
-                        Você tem certeza que deseja deletar este sumário? Esta ação não pode ser revertida.
+                        Are you sure you want to delete this summary? This action cannot be undone.
                     </DialogDescription>
                 </DialogHeader>
                 <DialogFooter>
-                    <Button variant="outline" className='bg-gray-500 hover:bg-gray-600 text-white' onClick={() => setOpen(false)}>Cancelar</Button>
-                    <Button variant="destructive" className={cn('bg-blue-500 hover:bg-blue-600', isPending && 'opacity-50 cursor-not-allowed')} onClick={handleDelete}>{isPending ? "Deletando..." : 'Deletar'}</Button>
+                    <Button variant="outline" className='bg-gray-500 hover:bg-gray-600 text-white' onClick={() => setOpen(false)}>Cancel</Button>
+                    <Button variant="destructive" className={cn('bg-blue-500 hover:bg-blue-600', isPending && 'opacity-50 cursor-not-allowed')} onClick={handleDelete}>{isPending ? "Deleting..." : 'Delete'}</Button>
                 </DialogFooter>
             </DialogContent>
         </Dialog>

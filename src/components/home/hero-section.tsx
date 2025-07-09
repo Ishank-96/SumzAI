@@ -39,7 +39,7 @@ export default async function HeroSection() {
                     className="relative px-6 py-2 text-base font-medium bg-white rounded-full group-hover:bg-gray-50 transition-colors duration-200"
                 >
                     <Sparkles size={20} className="mr-2 text-blue-600 animate-pulse" />
-                    <p className="text-blue-600">Feito com IA</p>
+                    <p className="text-blue-600">Made with AI</p>
                 </Badge>
             </MotionDiv>
 
@@ -64,24 +64,24 @@ export default async function HeroSection() {
                     >
                         ⚡
                     </MotionDiv>
-                    Gere
+                    Generate
                 </span>
 
-                <span className="relative inline-flex items-center">Sumários</span>
+                <span className="relative inline-flex items-center">Summaries</span>
 
                 <span className="relative inline-block">
                     <MotionSpan
                         whileHover={buttonVariants}
                         className="relative z-10 px-2"
                     >
-                        Poderosos 🚀
+                        Powerful 🚀
                     </MotionSpan>
                     <span
                         className="absolute inset-0 bg-blue-200/50 -rotate-2 rounded-lg transform -skew-y-1"
                         aria-hidden="true"
                     ></span>
                 </span>
-                <span className="relative inline-flex items-center">com seus</span>
+                <span className="relative inline-flex items-center">with your</span>
 
                 <span className="relative inline-flex items-center">PDFs
                     <MotionDiv
@@ -107,7 +107,7 @@ export default async function HeroSection() {
                 variants={itemVariants}
                 className="text-lg sm:text-xl lg:text-2xl text-center px-4 lg:px-0 lg:max-w-4xl text-gray-600"
             >
-                Faça um sumário de qualquer PDF em segundos
+                Summarize any PDF in seconds
             </MotionH2>
 
             <MotionDiv variants={itemVariants} whileHover={buttonVariants}>
@@ -121,7 +121,7 @@ export default async function HeroSection() {
                     rounded-full px-8 sm:px-10 lg:px-12 py-6 sm:py-7 lg:py-8 lg:mt-16 bg-linear-to-r group hover:no-underline
                     from-slate-900 to-blue-800 hover:to-slate-900 hover:from-blue-800 font-bold shadow-lg transition-all duration-300"
                     >
-                        Transforme agora
+                        Try it now
                         <ArrowRight size={20} className="animate-pulse" />
                     </Button>
                 </Link>

@@ -10,11 +10,11 @@ export default function SummaryHeader({ title, createdAt, readingTime }: { title
                 <div className="flex items-center gap-4 flex-wrap">
                     <Badge className="relative px-4 py-1.5 text-sm font-medium bg-white/80 backdrop-blur-xs rounded-full hover:bg-white/90 transition-all durantion-200 shadow-xs hover:shadow-md border border-blue-100/30 text-blue-500">
                         <Sparkles className="h-3 w-3 sm:h-4 sm:w-4 text-blue-500" />
-                        Sumário Gerado com IA
+                        AI-Generated Summary
                     </Badge>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                         <Calendar className="h-4 w-4 text-blue-400" />
-                        {new Date(createdAt).toLocaleDateString('pt-BR', {
+                        {new Date(createdAt).toLocaleDateString('en-US', {
                             day: 'numeric',
                             month: 'long',
                             year: 'numeric'
@@ -22,7 +22,7 @@ export default function SummaryHeader({ title, createdAt, readingTime }: { title
                     </div>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                         <Clock className="h-4 w-4 text-blue-400" />
-                        {readingTime} minutos de leitura
+                        {readingTime} minute read
                     </div>
                 </div>
                 <h1 className="text-2xl font-bold lg:text-4xl lg:tracking-tight">

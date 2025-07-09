@@ -22,15 +22,15 @@ export default function Header() {
                 </NavLink>
             </div>
             <div className="flex lg:justify-center gap-4 lg:gap-12 lg:items-center" cy-data="nav-links">
-                <NavLink href="/#pricing" cy-data="pricing-link">Preços</NavLink>
+                <NavLink href="/#pricing" cy-data="pricing-link">Pricing</NavLink>
                 <SignedIn>
-                    <NavLink href="/dashboard" cy-data="dashboard-link">Seus sumários</NavLink>
+                    <NavLink href="/dashboard" cy-data="dashboard-link">Your summaries</NavLink>
                 </SignedIn>
             </div>
             <div className="flex lg:flex-1 lg:justify-end" cy-data="auth-section">
                 <SignedIn>
                     <div className="flex gap-2 items-center" cy-data="signed-in-section">
-                        <NavLink href="/upload" cy-data="upload-link">Enviar PDF</NavLink>
+                        <NavLink href="/upload" cy-data="upload-link">Upload PDF</NavLink>
                         <PlanBadge cy-data="plan-badge" />
                         <SignedIn>
                             <UserButton cy-data="user-button" />
@@ -39,7 +39,7 @@ export default function Header() {
                 </SignedIn>
 
                 <SignedOut>
-                    <NavLink href="/sign-in" cy-data="sign-in-link">Entrar</NavLink>
+                    <NavLink href="/sign-in" cy-data="sign-in-link">Sign In</NavLink>
                 </SignedOut>
             </div>
         </nav>

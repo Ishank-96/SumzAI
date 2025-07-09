@@ -8,7 +8,7 @@ export async function handleSubscriptionDeleted({
   subscriptionId: string;
   stripe: Stripe;
 }) {
-  console.log("Assinatura deletada", subscriptionId);
+  console.log("Subscription deleted", subscriptionId);
 
   try {
     const subscription = await stripe.subscriptions.retrieve(subscriptionId);
@@ -18,9 +18,9 @@ export async function handleSubscriptionDeleted({
       UPDATE users SET status = 'canceled' WHERE customer_id = ${subscription.customer}
     `;
 
-    console.log("Assinatura deletada com sucesso");
+    console.log("Subscription successfully deleted");
   } catch (error) {
-    console.error("Erro ao deletar assinatura", error);
+    console.error("Error while deleting subscription", error);
     throw error;
   }
 }
@@ -33,7 +33,7 @@ export async function handleCheckoutCompleted({
   stripe: Stripe;
 }) {
   const sql = await getDbConnection();
-  console.log("Sessão do checkout concluída", session);
+  console.log("Checkout session completed", session);
 
   const customerId = session.customer as string;
   const customer = await stripe.customers.retrieve(customerId);
@@ -79,13 +79,13 @@ async function createOrUpdateUser({
     const user = await sql`SELECT * FROM users WHERE email = ${email}`;
 
     if (user.length === 0) {
-      // Insere novo usuário
+      // Insert new user
       await sql`
         INSERT INTO users (email, full_name, customer_id, price_id, status)
         VALUES (${email}, ${fullName}, ${customerId}, ${priceId}, ${status})
       `;
     } else {
-      // Atualiza usuário existente
+      // Update existing user
       await sql`
         UPDATE users
         SET full_name = ${fullName},
@@ -96,7 +96,7 @@ async function createOrUpdateUser({
       `;
     }
   } catch (error) {
-    console.error("Erro ao criar ou atualizar usuário", error);
+    console.error("Error creating or updating user", error);
   }
 }
 
@@ -119,6 +119,6 @@ async function createPayment({
       VALUES (${amount_total}, ${status}, ${id}, ${priceId}, ${userEmail})
     `;
   } catch (error) {
-    console.error("Erro ao criar pagamento", error);
+    console.error("Error creating payment", error);
   }
 }

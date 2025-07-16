@@ -1,7 +1,7 @@
 {
-  "name": "SumaristaAI",
-  "short_name": "sumaristaai",
-  "description": "Transforme PDFs em sumários com inteligência artificial.",
+  "name": "SumzAI",
+  "short_name": "SumzAI",
+  "description": "Transform pdf using AI.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#1164FF",
@@ -17,5 +17,5 @@
     }
   ],
   "scope": "/",
-  "lang": "pt-BR"
+  "lang": "en"
 }

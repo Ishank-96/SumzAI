@@ -12,7 +12,7 @@ const steps: Step[] = [
   {
     icon: <FileText size={64} strokeWidth={1.5} />,
     label: "Upload your PDF",
-    description: "Just drag and drop your PDF or click to upload it to SumaristaAI.",
+    description: "Just drag and drop your PDF or click to upload it to SumzAI.",
   },
   {
     icon: <BrainCircuit size={64} strokeWidth={1.5} />,

@@ -15,7 +15,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "SumzaAI | ⚡ Generate summaries with AI",
+  title: "SumzAI | ⚡ Generate summaries with AI",
   description:
     "Your AI summary expert. Extract insights from PDFs, summaries, and documents with precision and speed using SumzAI.",
   openGraph: {

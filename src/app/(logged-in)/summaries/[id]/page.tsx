@@ -9,7 +9,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
-    title: "Summary | SumaristaAI",
+    title: "Summary | SumzAI",
     description: "Transform your PDFs into concise insights",
     openGraph: {
         images: [{ url: "/opengraph-image.png" }],

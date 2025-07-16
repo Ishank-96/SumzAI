@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
-  title: "Upload PDF 📄 | SumaristaAI",
+  title: "Upload PDF 📄 | SumzAI",
   description: "Upload your PDF and generate a summary with AI",
   openGraph: {
     images: [{ url: "/opengraph-image.png" }],

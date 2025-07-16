@@ -18,7 +18,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
-    title: "Your Summaries | SumaristaAI",
+    title: "Your Summaries | SumzAI",
     description: "Transform your PDFs into concise insights",
     openGraph: {
         images: [{ url: "/opengraph-image.png" }],

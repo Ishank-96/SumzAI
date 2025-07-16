@@ -7,7 +7,7 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Page not found | SumaristaAI",
+  title: "Page not found | SumzAI",
   description: "The page you are looking for does not exist or has been removed.",
   openGraph: {
     images: [{ url: "/opengraph-image.png" }],

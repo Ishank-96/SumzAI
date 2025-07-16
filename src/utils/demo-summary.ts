@@ -1,10 +1,10 @@
 export const DEMO_SUMMARY = `
-## 🚀 **SummaristAI**
+## 🚀 **SumzAI**
 
 - 🔴 **Turn complex texts into engaging, easy-to-understand summaries!**  
-- 📌 SummaristAI uses artificial intelligence to create accurate, dynamic, and personalized summaries in seconds.
+- 📌 SumzAI uses artificial intelligence to create accurate, dynamic, and personalized summaries in seconds.
 
-## 📄 **What is SummaristAI?**  
+## 📄 **What is SumztAI?**  
 - 🤖 An AI-powered platform for automatically generating summaries.  
 - ⚡ Simplify reports, articles, news, and much more.  
 - 🎯 Save time and boost productivity while reading.
@@ -12,7 +12,7 @@ export const DEMO_SUMMARY = `
 ## 🔥 **Key Features**  
 - 📝 **Smart Summaries** – Convert long texts into short, direct insights.
 
-## 💡 **Why Use SummaristAI?**  
+## 💡 **Why Use SumzAI?**  
 - ⏳ **Save Time** – Read less, understand more.  
 - 📚 **Enhance Your Learning** – Perfect for students and researchers.  
 - 🏢 **Boost Efficiency** – Optimized summaries for professionals and businesses.  

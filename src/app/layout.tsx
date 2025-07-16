@@ -15,22 +15,22 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "SumaristaAI | ⚡ Generate summaries with AI",
+  title: "SumzaAI | ⚡ Generate summaries with AI",
   description:
-    "Your AI summary expert. Extract insights from PDFs, summaries, and documents with precision and speed using SumaristaAI.",
+    "Your AI summary expert. Extract insights from PDFs, summaries, and documents with precision and speed using SumzAI.",
   openGraph: {
-    title: "SumaristaAI | ⚡ Generate summaries with AI",
+    title: "SumzAI | ⚡ Generate summaries with AI",
     description:
-      "Your AI summary expert. Extract insights from PDFs, summaries, and documents with precision and speed using SumaristaAI.",
+      "Your AI summary expert. Extract insights from PDFs, summaries, and documents with precision and speed using SumzAI.",
     url: ORIGIN_URL,
     images: [{ url: "/opengraph-image.png" }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SumaristaAI | ⚡ Generate summaries with AI",
+    title: "SumzAI | ⚡ Generate summaries with AI",
     description:
-      "Your AI summary expert. Extract insights from PDFs, summaries, and documents with precision and speed using SumaristaAI.",
+      "Your AI summary expert. Extract insights from PDFs, summaries, and documents with precision and speed using SumzAI.",
     images: [{ url: "/opengraph-image.png" }],
   },
   icons: {
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
     canonical: ORIGIN_URL,
   },
   generator: "Next.js",
-  applicationName: "SumaristaAI",
-  creator: "https://github.com/matheusmartinsviana",
+  applicationName: "SumzAI",
+  creator: "https://github.com/Ishank-96",
   keywords: [
     "artificial intelligence",
     "summary",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "SumaristaAI",
+    title: "SumAI",
     startupImage: [
       "/favicon/apple-touch-icon.png",
       "/favicon/apple-touch-icon-120x120.png",

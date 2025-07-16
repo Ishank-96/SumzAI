@@ -18,7 +18,6 @@ export const pricingPlans = [
       "Unlimited PDF summaries",
       "Priority processing",
       "24/7 support",
-      "Markdown export",
     ],
     id: "pro",
     paymentLink: "https://buy.stripe.com/test_cNicN48rW0c35y8dCVgnK00",

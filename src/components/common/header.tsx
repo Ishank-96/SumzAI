@@ -13,7 +13,7 @@ export default function Header() {
                 <NavLink href="/" className="flex items-center gap-1 lg:gap-2 shrink-0" cy-data="home-link">
                     <Image
                         src={"/SumaristaAI-logo.webp"}
-                        alt="SumaristaAI Logo"
+                        alt="SumzAI Logo"
                         width={40}
                         height={40}
                         className='shadow-lg rounded-lg'

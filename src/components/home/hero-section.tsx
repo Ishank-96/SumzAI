@@ -67,14 +67,14 @@ export default async function HeroSection() {
                     Generate
                 </span>
 
-                <span className="relative inline-flex items-center">Summaries</span>
+                <span className="relative inline-flex items-center">powerful</span>
 
                 <span className="relative inline-block">
                     <MotionSpan
                         whileHover={buttonVariants}
                         className="relative z-10 px-2"
                     >
-                        Powerful 🚀
+                        Summaries 🚀
                     </MotionSpan>
                     <span
                         className="absolute inset-0 bg-blue-200/50 -rotate-2 rounded-lg transform -skew-y-1"

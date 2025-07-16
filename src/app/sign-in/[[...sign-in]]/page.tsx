@@ -3,9 +3,9 @@ import { SignIn } from "@clerk/nextjs";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Sign In | SumaristaAI",
+    title: "Sign In | SumzAI",
     description:
-        "Access your account and start using SumaristaAI to generate PDF summaries with artificial intelligence.",
+        "Access your account and start using SumzAI to generate PDF summaries with artificial intelligence.",
     openGraph: {
         images: [{ url: "/opengraph-image.png" }],
     },

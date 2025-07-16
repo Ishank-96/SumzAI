@@ -98,13 +98,13 @@ const PricingCard = async ({
           <p className="text-5xl tracking-tighter font-extrabold">
             {price.toLocaleString("en-US", {
               style: "currency",
-              currency: "BRL",
+              currency: "INR",
               minimumFractionDigits: 0,
               maximumFractionDigits: 1,
             })}
           </p>
           <div className="flex flex-col gap-1 justify-end mb-[4px]">
-            <p className="text-xs uppercase font-semibold">RS</p>
+            <p className="text-xs uppercase font-semibold">Rs</p>
             <p className="text-xs">/month</p>
           </div>
         </MotionDiv>

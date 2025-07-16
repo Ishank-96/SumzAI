@@ -59,7 +59,7 @@ export default function HowItWorksSection() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="font-bold text-xl md:text-2xl max-w-1xl mx-auto"
         >
-          SumaristaAI helps you create summaries in just 3 steps.
+          SumzAI helps you create summaries in just 3 steps.
         </MotionH3>
       </div>
 

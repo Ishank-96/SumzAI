@@ -9,11 +9,9 @@ export default function Footer() {
                 </div>
             </div>
             <div className="flex justify-center items-center gap-2 flex-col text-gray-400 mt-2">
-                <a href="mailto:sumaristaai@gmail.com">test@example.com</a>
+                <a href="mailto:test@example.com">test@example.com</a>
             </div>
-            <div className="flex justify-center items-center mt-4 space-x-4 p-4">
-                
-            </div>
+            
         </footer>
     );
 }

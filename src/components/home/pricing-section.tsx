@@ -104,7 +104,7 @@ const PricingCard = async ({
             })}
           </p>
           <div className="flex flex-col gap-1 justify-end mb-[4px]">
-            <p className="text-xs uppercase font-semibold">BRL</p>
+            <p className="text-xs uppercase font-semibold">RS</p>
             <p className="text-xs">/month</p>
           </div>
         </MotionDiv>

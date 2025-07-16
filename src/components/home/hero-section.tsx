@@ -39,7 +39,7 @@ export default async function HeroSection() {
                     className="relative px-6 py-2 text-base font-medium bg-white rounded-full group-hover:bg-gray-50 transition-colors duration-200"
                 >
                     <Sparkles size={20} className="mr-2 text-blue-600 animate-pulse" />
-                    <p className="text-blue-600">Made with AI</p>
+                    <p className="text-blue-600">AI Integrated</p>
                 </Badge>
             </MotionDiv>
 
